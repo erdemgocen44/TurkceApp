@@ -14,11 +14,11 @@ class Home extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.pink[600],
+          foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(
-              color: Colors.white,
               fontFamily: "PatrickHand-Regular",
-              fontSize: 15,
-              fontWeight: FontWeight.w500),
+              fontSize: 20, //bunu headline olarak yapmam lazım!
+              fontWeight: FontWeight.bold),
         ),
       ),
       home: AnaSayfa(),

@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
+          titleTextStyle: const TextStyle(fontFamily: "PatrickHand-Regular"),
           color: Colors.pink[600],
         ),
       ),

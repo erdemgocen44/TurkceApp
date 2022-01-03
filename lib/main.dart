@@ -13,8 +13,12 @@ class Home extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          titleTextStyle: const TextStyle(fontFamily: "PatrickHand-Regular"),
-          color: Colors.pink[600],
+          backgroundColor: Colors.pink[600],
+          titleTextStyle: const TextStyle(
+              color: Colors.white,
+              fontFamily: "PatrickHand-Regular",
+              fontSize: 15,
+              fontWeight: FontWeight.w500),
         ),
       ),
       home: AnaSayfa(),

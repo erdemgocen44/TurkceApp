@@ -1,3 +1,4 @@
+import 'package:aba_app/core/widget/listTileCustom.dart';
 import 'package:aba_app/core/widget/textcustom.dart';
 import 'package:flutter/material.dart';
 
@@ -26,14 +27,16 @@ class YanMenu extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  ListTile(
-                    leading: const Icon(Icons.access_time),
-                    title: defaulttext(
-                        "Ortaokul 5", 12, FontWeight.bold, Colors.black),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+                  CustomListTile(
+                      context,
+                      Icon(
+                        Icons.adb_sharp,
+                        color: Color(0xed923456),
+                      ),
+                      "Ortaokul 5",
+                      FontWeight.bold,
+                      20,
+                      Colors.pink),
                 ],
               ),
             ),

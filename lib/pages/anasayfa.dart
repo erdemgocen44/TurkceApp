@@ -1,4 +1,5 @@
 import 'package:aba_app/core/widget/iconbutton.dart';
+import 'package:aba_app/pages/yanmenu.dart';
 import 'package:flutter/material.dart';
 
 class AnaSayfa extends StatefulWidget {
@@ -26,6 +27,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
         ],
       ),
       body: Container(),
+      drawer: YanMenu(),
     );
   }
 }

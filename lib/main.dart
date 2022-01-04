@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'anasayfa.dart';
+import 'pages/anasayfa.dart';
 
 void main() => runApp(const Home());
 

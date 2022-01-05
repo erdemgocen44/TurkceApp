@@ -10,10 +10,19 @@ class AnaSayfa extends StatefulWidget {
 }
 
 class _AnaSayfaState extends State<AnaSayfa> {
+  GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffold,
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            _scaffold.currentState?.openDrawer();
+          },
+          icon: Icon(Icons.menu),
+          tooltip: "Yan Menüyü Aç",
+        ),
         title: const Text(
           "DERSİMİZ TÜRKÇE",
           style: TextStyle(

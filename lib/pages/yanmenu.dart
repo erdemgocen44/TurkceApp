@@ -28,56 +28,48 @@ class YanMenu extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  CustomListTile(
-                    context,
-                    const Icon(
+                  const CustomListTile(
+                    ikon: Icon(
                       Icons.adb_sharp,
                       size: 35,
                       color: Color(0xFF9ec22a),
                     ),
-                    "Ortaokul 5",
-                    "",
-                    Colors.pink,
-                    FontWeight.bold,
+                    yazi: "Ortaokul 5",
+                    renk: Colors.pink,
+                    kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
-                  CustomListTile(
-                    context,
-                    const Icon(
+                  const CustomListTile(
+                    ikon: Icon(
                       Icons.face_sharp,
                       size: 35,
                       color: Color(0xFF9ec22a),
                     ),
-                    "Ortaokul 6",
-                    "",
-                    Colors.pink,
-                    FontWeight.bold,
+                    yazi: "Ortaokul 6",
+                    renk: Colors.pink,
+                    kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
-                  CustomListTile(
-                    context,
-                    const Icon(
+                  const CustomListTile(
+                    ikon: Icon(
                       Icons.mode_edit_sharp,
                       size: 35,
                       color: Color(0xFF9ec22a),
                     ),
-                    "Ortaokul 7",
-                    "",
-                    Colors.pink,
-                    FontWeight.bold,
+                    yazi: "Ortaokul 7",
+                    renk: Colors.pink,
+                    kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
-                  CustomListTile(
-                    context,
-                    const Icon(
+                  const CustomListTile(
+                    ikon: Icon(
                       Icons.light_sharp,
                       size: 35,
                       color: Color(0xFF9ec22a),
                     ),
-                    "Ortaokul 8",
-                    "",
-                    Colors.pink,
-                    FontWeight.bold,
+                    yazi: "Ortaokul 8",
+                    renk: Colors.pink,
+                    kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
                   ExpansionTile(
@@ -90,59 +82,58 @@ class YanMenu extends StatelessWidget {
                     children: [
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: CustomListTile(
-                            context,
-                            const Icon(
+                        child: const CustomListTile(
+                            ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.orangeAccent,
                             ),
-                            "5.Sınıf",
-                            "https://www.youtube.com/watch?v=IY4PQG2M7yY&list=PLpmkeV7WlemU4cfKtVycpU-KsLSJBix09"),
+                            yazi: "5.Sınıf",
+                            site:
+                                "https://www.youtube.com/watch?v=IY4PQG2M7yY&list=PLpmkeV7WlemU4cfKtVycpU-KsLSJBix09"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: CustomListTile(
-                            context,
-                            const Icon(
+                        child: const CustomListTile(
+                            ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.deepPurpleAccent,
                             ),
-                            "6.Sınıf",
-                            "https://www.youtube.com/watch?v=OZIMUYkGzWE&list=PLpmkeV7WlemVzNlzZNR12uxyyqaX1-5Kx"),
+                            yazi: "6.Sınıf",
+                            site:
+                                "https://www.youtube.com/watch?v=OZIMUYkGzWE&list=PLpmkeV7WlemVzNlzZNR12uxyyqaX1-5Kx"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: CustomListTile(
-                            context,
-                            const Icon(
+                        child: const CustomListTile(
+                            ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.lightBlueAccent,
                             ),
-                            "7.Sınıf",
-                            "https://www.youtube.com/watch?v=0_z7oNpumiQ&list=PLpmkeV7WlemWXkg_x5WkjU_TQHSz36c7_"),
+                            yazi: "7.Sınıf",
+                            site:
+                                "https://www.youtube.com/watch?v=0_z7oNpumiQ&list=PLpmkeV7WlemWXkg_x5WkjU_TQHSz36c7_"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: CustomListTile(
-                            context,
-                            const Icon(
+                        child: const CustomListTile(
+                            ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.blueAccent,
                             ),
-                            "8.Sınıf",
-                            "https://www.youtube.com/watch?v=Wx-r10ClJvM&list=PLpmkeV7WlemVU8eiySs09Vbg8AzQoJ17r"),
+                            yazi: "8.Sınıf",
+                            site:
+                                "https://www.youtube.com/watch?v=Wx-r10ClJvM&list=PLpmkeV7WlemVU8eiySs09Vbg8AzQoJ17r"),
                       ),
                     ],
                   ),
                   dividercustom(),
-                  CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.family_restroom_sharp,
-                        color: Colors.purpleAccent,
-                      ),
-                      "HAKKIMIZDA",
-                      "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about"),
+                  const CustomListTile(
+                    ikon:
+                        Icon(Icons.family_restroom, color: Colors.purpleAccent),
+                    yazi: "HAKKIMIZDA",
+                    site:
+                        "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about",
+                  ),
                   ListTile(
                     onTap: () {
                       Navigator.pop(context);
@@ -154,7 +145,8 @@ class YanMenu extends StatelessWidget {
                     ),
                     title: const Text(
                       "İLETİŞİM",
-                      style: TextStyle(fontSize: 16),
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],

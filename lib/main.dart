@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
           foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(
               fontFamily: "PatrickHand-Regular",
-              fontSize: 20, //bunu headline olarak yapmam lazım!
+              fontSize: 22, //bunu headline olarak yapmam lazım!
               fontWeight: FontWeight.bold),
         ),
       ),

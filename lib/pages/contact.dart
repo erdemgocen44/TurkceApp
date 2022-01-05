@@ -7,7 +7,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("İletişim"),
+        title: const Text("İLETİŞİM"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,

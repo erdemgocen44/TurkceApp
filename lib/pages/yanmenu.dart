@@ -1,6 +1,7 @@
 import 'package:aba_app/core/widget/listTileCustom.dart';
 import 'package:aba_app/core/widget/textcustom.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class YanMenu extends StatelessWidget {
   const YanMenu({Key? key}) : super(key: key);
@@ -28,48 +29,56 @@ class YanMenu extends StatelessWidget {
               child: ListView(
                 children: [
                   CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.adb_sharp,
-                        size: 35,
-                        color: Color(0xFF9ec22a),
-                      ),
-                      "Ortaokul 5",
-                      FontWeight.bold,
-                      Colors.pink),
+                    context,
+                    const Icon(
+                      Icons.adb_sharp,
+                      size: 35,
+                      color: Color(0xFF9ec22a),
+                    ),
+                    "Ortaokul 5",
+                    "",
+                    Colors.pink,
+                    FontWeight.bold,
+                  ),
                   dividercustom(),
                   CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.face_sharp,
-                        size: 35,
-                        color: Color(0xFF9ec22a),
-                      ),
-                      "Ortaokul 6",
-                      FontWeight.bold,
-                      Colors.pink),
+                    context,
+                    const Icon(
+                      Icons.face_sharp,
+                      size: 35,
+                      color: Color(0xFF9ec22a),
+                    ),
+                    "Ortaokul 6",
+                    "",
+                    Colors.pink,
+                    FontWeight.bold,
+                  ),
                   dividercustom(),
                   CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.mode_edit_sharp,
-                        size: 35,
-                        color: Color(0xFF9ec22a),
-                      ),
-                      "Ortaokul 7",
-                      FontWeight.bold,
-                      Colors.pink),
+                    context,
+                    const Icon(
+                      Icons.mode_edit_sharp,
+                      size: 35,
+                      color: Color(0xFF9ec22a),
+                    ),
+                    "Ortaokul 7",
+                    "",
+                    Colors.pink,
+                    FontWeight.bold,
+                  ),
                   dividercustom(),
                   CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.light_sharp,
-                        size: 35,
-                        color: Color(0xFF9ec22a),
-                      ),
-                      "Ortaokul 8",
-                      FontWeight.bold,
-                      Colors.pink),
+                    context,
+                    const Icon(
+                      Icons.light_sharp,
+                      size: 35,
+                      color: Color(0xFF9ec22a),
+                    ),
+                    "Ortaokul 8",
+                    "",
+                    Colors.pink,
+                    FontWeight.bold,
+                  ),
                   dividercustom(),
                   ExpansionTile(
                     leading: const Icon(
@@ -87,9 +96,7 @@ class YanMenu extends StatelessWidget {
                               Icons.supervised_user_circle,
                               color: Colors.orangeAccent,
                             ),
-                            "5.Sınıf",
-                            FontWeight.w500,
-                            Colors.blueGrey),
+                            "5.Sınıf"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -97,11 +104,9 @@ class YanMenu extends StatelessWidget {
                             context,
                             const Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.orangeAccent,
+                              color: Colors.deepPurpleAccent,
                             ),
-                            "6.Sınıf",
-                            FontWeight.w500,
-                            Colors.greenAccent),
+                            "6.Sınıf"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -111,9 +116,7 @@ class YanMenu extends StatelessWidget {
                               Icons.supervised_user_circle,
                               color: Colors.lightBlueAccent,
                             ),
-                            "7.Sınıf",
-                            FontWeight.w500,
-                            Colors.blueGrey),
+                            "7.Sınıf"),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -121,11 +124,9 @@ class YanMenu extends StatelessWidget {
                             context,
                             const Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.lightGreenAccent,
+                              color: Colors.blueAccent,
                             ),
-                            "8.Sınıf",
-                            FontWeight.w500,
-                            Colors.blueGrey),
+                            "8.Sınıf"),
                       ),
                     ],
                   ),
@@ -134,20 +135,18 @@ class YanMenu extends StatelessWidget {
                       context,
                       const Icon(
                         Icons.family_restroom_sharp,
-                        color: Colors.lightGreenAccent,
+                        color: Colors.purpleAccent,
                       ),
                       "HAKKIMIZDA",
-                      FontWeight.w500,
-                      Colors.blueGrey),
+                      "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about"),
                   CustomListTile(
                       context,
                       const Icon(
                         Icons.contact_phone,
-                        color: Colors.lightGreenAccent,
+                        color: Colors.brown,
                       ),
                       "İLETİŞİM",
-                      FontWeight.w500,
-                      Colors.blueGrey),
+                      "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/featured"),
                 ],
               ),
             ),

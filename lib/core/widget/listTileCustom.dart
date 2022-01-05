@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 ListTile CustomListTile(BuildContext context, Icon ikon, String yazi,
-        FontWeight kalinlik, Color renk) =>
+        [String? site, Color? renk, FontWeight? kalinlik]) =>
     ListTile(
       leading: ikon,
       title: Text(
@@ -10,5 +11,13 @@ ListTile CustomListTile(BuildContext context, Icon ikon, String yazi,
       ),
       onTap: () {
         Navigator.pop(context);
+        _urlAc("${site}");
       },
     );
+Future _urlAc(String link) async {
+  if (await canLaunch(link)) {
+    await launch(link);
+  } else {
+    debugPrint("Linke ulaşılamıyor");
+  }
+}

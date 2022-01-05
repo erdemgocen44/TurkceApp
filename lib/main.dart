@@ -1,3 +1,4 @@
+import 'package:aba_app/pages/contact.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/anasayfa.dart';
@@ -29,4 +30,5 @@ class Home extends StatelessWidget {
 
 var rotalar = <String, WidgetBuilder>{
   "/anasayfa": (BuildContext context) => AnaSayfa(),
+  "/contact": (BuildContext context) => const ContactPage(),
 };

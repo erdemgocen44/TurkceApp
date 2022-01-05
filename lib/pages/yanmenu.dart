@@ -143,14 +143,20 @@ class YanMenu extends StatelessWidget {
                       ),
                       "HAKKIMIZDA",
                       "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about"),
-                  CustomListTile(
-                      context,
-                      const Icon(
-                        Icons.contact_phone,
-                        color: Colors.brown,
-                      ),
+                  ListTile(
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.pushNamed(context, "/contact");
+                    },
+                    leading: const Icon(
+                      Icons.phone,
+                      color: Colors.brown,
+                    ),
+                    title: const Text(
                       "İLETİŞİM",
-                      "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/featured"),
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
                 ],
               ),
             ),

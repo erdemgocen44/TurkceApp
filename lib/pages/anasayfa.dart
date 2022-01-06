@@ -20,7 +20,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
           onPressed: () {
             _scaffold.currentState?.openDrawer();
           },
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           tooltip: "Yan Menüyü Aç",
         ),
         title: const Text(

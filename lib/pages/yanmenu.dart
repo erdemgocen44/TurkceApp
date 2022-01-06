@@ -77,8 +77,12 @@ class YanMenu extends StatelessWidget {
                       Icons.phone_android,
                       color: Colors.blueAccent,
                     ),
-                    title: defaulttext(
-                        "Video Dersler", 20, FontWeight.bold, Colors.black),
+                    title: const defaulttext(
+                      yazi: "VİDEO DERSLER",
+                      size: 20,
+                      kalinlik: FontWeight.bold,
+                      renk: Colors.black,
+                    ),
                     children: [
                       Container(
                         margin: const EdgeInsets.only(left: 10),

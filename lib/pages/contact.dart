@@ -32,19 +32,21 @@ class _ContactPageState extends State<ContactPage> {
                 zoom: 17.0,
               ),
               onMapCreated: (GoogleMapController controller) {
-                _createrMaps.complete(controller);
                 final MarkerId markerId = MarkerId("center");
                 final Marker marker = Marker(
-                    markerId: markerId,
-                    position: LatLng(46.1937833, 6.1098921),
-                    infoWindow: InfoWindow(
-                        title: "Dersimiz Türkçe",
-                        snippet: "Türkçeye dokun!",
-                        onTap: () {
-                          debugPrint("Marker tıklandı");
-                        }));
+                  markerId: markerId,
+                  position: LatLng(46.1937833, 6.1098921),
+                  infoWindow: InfoWindow(
+                    title: "Dersimiz Türkçe",
+                    snippet: "Türkçeye dokun!",
+                    onTap: () {
+                      debugPrint("Marker tıklandı");
+                    },
+                  ),
+                );
                 setState(() {
                   _markers[markerId] = marker;
+                  _createrMaps.complete(controller);
                 });
               },
             ),

@@ -22,14 +22,14 @@ class _ContactPageState extends State<ContactPage> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            height: MediaQuery.of(context).size.height * 0.3,
+            height: MediaQuery.of(context).size.height * 0.4,
             width: double.maxFinite,
             child: GoogleMap(
               mapType: MapType.normal,
               markers: Set<Marker>.of(_markers.values),
               initialCameraPosition: const CameraPosition(
                 target: LatLng(46.1937833, 6.1098921),
-                zoom: 17.0,
+                zoom: 13.0,
               ),
               onMapCreated: (GoogleMapController controller) {
                 final MarkerId markerId = MarkerId("center");

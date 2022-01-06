@@ -28,14 +28,14 @@ class _ContactPageState extends State<ContactPage> {
               mapType: MapType.normal,
               markers: Set<Marker>.of(_markers.values),
               initialCameraPosition: const CameraPosition(
-                target: LatLng(46.1937833, 6.1098921),
+                target: LatLng(39.9363429, 32.8232167),
                 zoom: 13.0,
               ),
               onMapCreated: (GoogleMapController controller) {
                 final MarkerId markerId = MarkerId("center");
                 final Marker marker = Marker(
                   markerId: markerId,
-                  position: LatLng(46.1937833, 6.1098921),
+                  position: LatLng(39.9363429, 32.8232167),
                   infoWindow: InfoWindow(
                     title: "Dersimiz Türkçe",
                     snippet: "Türkçeye dokun!",

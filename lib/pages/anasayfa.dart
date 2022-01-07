@@ -3,7 +3,7 @@ import 'package:aba_app/pages/yanmenu.dart';
 import 'package:flutter/material.dart';
 
 class AnaSayfa extends StatefulWidget {
-  AnaSayfa({Key? key}) : super(key: key);
+  const AnaSayfa({Key? key}) : super(key: key);
 
   @override
   _AnaSayfaState createState() => _AnaSayfaState();
@@ -24,9 +24,9 @@ class _AnaSayfaState extends State<AnaSayfa> {
           tooltip: "Yan Menüyü Aç",
         ),
         title: const Text(
-          "DERSİMİZ TÜRKÇE",
+          "Dersimiz Türkçe",
           style: TextStyle(
-            fontSize: 25,
+            fontSize: 28,
             fontWeight: FontWeight.w900,
           ),
         ),
@@ -37,7 +37,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
         ],
       ),
       body: Container(),
-      drawer: YanMenu(),
+      drawer: const YanMenu(),
     );
   }
 }

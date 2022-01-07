@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "Comfortaa",
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.pink[600],
           foregroundColor: Colors.white,

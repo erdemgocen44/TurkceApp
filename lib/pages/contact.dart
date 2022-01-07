@@ -35,7 +35,7 @@ class _ContactPageState extends State<ContactPage> {
                 final MarkerId markerId = MarkerId("center");
                 final Marker marker = Marker(
                   markerId: markerId,
-                  position: LatLng(39.9363429, 32.8232167),
+                  position: const LatLng(39.9363429, 32.8232167),
                   infoWindow: InfoWindow(
                     title: "Dersimiz Türkçe",
                     snippet: "Türkçeye dokun!",

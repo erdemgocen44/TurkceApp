@@ -1,6 +1,12 @@
-import 'package:aba_app/core/widget/iconbutton.dart';
+import 'dart:io';
+
 import 'package:aba_app/pages/yanmenu.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../core/futurecustom.dart';
 
 class AnaSayfa extends StatefulWidget {
   const AnaSayfa({Key? key}) : super(key: key);
@@ -32,8 +38,24 @@ class _AnaSayfaState extends State<AnaSayfa> {
         ),
         centerTitle: true,
         actions: [
-          iconbuttoncustom("Puan Ver", const Icon(Icons.star)),
-          iconbuttoncustom("Paylaş", const Icon(Icons.share)),
+          IconButton(
+            onPressed: () {
+              Share.share("""Dersimiz Türkçe Uygulamızı İndirdiniz mi? 
+         Android: https://play.google.com/store/apps
+         IOS: https://itunes.apple.com/us/app/id213898""");
+            },
+            icon: const Icon(FontAwesomeIcons.share),
+            tooltip: "Paylaş",
+          ),
+          IconButton(
+            onPressed: () {
+              urlAc(Platform.isAndroid
+                  ? "https://play.google.com/store/apps"
+                  : "IOS: https://itunes.apple.com/us/app/id213898");
+            },
+            icon: const Icon(FontAwesomeIcons.star),
+            tooltip: "Paylaş",
+          ),
         ],
       ),
       body: Container(),

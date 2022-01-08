@@ -29,7 +29,7 @@ class _ContactPageState extends State<ContactPage> {
         title: const Text("İLETİŞİM"),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.4,
@@ -60,21 +60,79 @@ class _ContactPageState extends State<ContactPage> {
               },
             ),
           ),
-          Container(
-            height: MediaQuery.of(context).size.height * 0.3,
-            child: const Center(
-              child: Icon(
-                FontAwesomeIcons.home,
-                size: 50,
-                color: Colors.pink,
-              ),
-            ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.15,
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  Icon(
+                    FontAwesomeIcons.home,
+                    size: 50,
+                    color: Colors.pink,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: defaulttext(
+                      yazi: "Atatürk Bulvarı No: 98 Bakanlıklar/ANKARA",
+                      size: 16,
+                      kalinlik: FontWeight.bold,
+                      hiza: TextAlign.center,
+                    ),
+                  ),
+                ]),
           ),
-          const Padding(
-            padding: EdgeInsets.all(10),
-            child: defaulttext(
-                yazi: "Atatürk Bulvarı No: 98 Bakanlıklar/ANKARA", size: 16),
-          )
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.15,
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      _linkeGit('tel:+903124132680');
+                    },
+                    child: const Icon(
+                      FontAwesomeIcons.phone,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: defaulttext(
+                      yazi: "Telefon: 0312 413 26 80",
+                      size: 16,
+                      kalinlik: FontWeight.bold,
+                      hiza: TextAlign.center,
+                    ),
+                  ),
+                ]),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.15,
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      _linkeGit('mailto:mgocen86@gmail.com');
+                    },
+                    child: const Icon(
+                      FontAwesomeIcons.envelope,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: defaulttext(
+                      yazi: "mgocen86@gmail.com",
+                      size: 16,
+                      kalinlik: FontWeight.bold,
+                      hiza: TextAlign.center,
+                    ),
+                  ),
+                ]),
+          ),
         ],
       ),
     );

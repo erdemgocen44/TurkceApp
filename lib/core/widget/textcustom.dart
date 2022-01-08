@@ -6,8 +6,13 @@ class defaulttext extends StatelessWidget {
   final FontWeight? kalinlik;
   final Color? renk;
 
-  const defaulttext({Key? key, this.yazi, this.size, this.kalinlik, this.renk})
-      : super(key: key);
+  const defaulttext({
+    Key? key,
+    this.yazi,
+    this.size,
+    this.kalinlik,
+    this.renk,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

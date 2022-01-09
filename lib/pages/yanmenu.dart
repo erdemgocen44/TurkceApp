@@ -1,5 +1,6 @@
+import 'package:aba_app/core/consts.dart';
+import 'package:aba_app/core/widget/dividerCustom.dart';
 import 'package:aba_app/core/widget/listTileCustom.dart';
-import 'package:aba_app/core/widget/textcustom.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -66,23 +67,21 @@ class YanMenu extends StatelessWidget {
                       FontAwesomeIcons.youtube,
                       color: Colors.pink,
                     ),
-                    title: const defaulttext(
-                      yazi: "Video Dersler",
-                      size: 16,
-                      kalinlik: FontWeight.bold,
-                      renk: Colors.black,
+                    title: Text(
+                      "Video Dersler",
+                      style: Theme.of(context).textTheme.headline5,
                     ),
                     children: [
                       Container(
                         margin: const EdgeInsets.only(left: 10),
                         child: const CustomListTile(
-                            ikon: Icon(
-                              Icons.supervised_user_circle,
-                              color: Colors.pink,
-                            ),
-                            yazi: "5.Sınıf",
-                            site:
-                                "https://www.youtube.com/watch?v=IY4PQG2M7yY&list=PLpmkeV7WlemU4cfKtVycpU-KsLSJBix09"),
+                          ikon: Icon(
+                            Icons.supervised_user_circle,
+                            color: Colors.pink,
+                          ),
+                          yazi: "5.Sınıf",
+                          site: youtube5,
+                        ),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -92,8 +91,7 @@ class YanMenu extends StatelessWidget {
                               color: Colors.pink,
                             ),
                             yazi: "6.Sınıf",
-                            site:
-                                "https://www.youtube.com/watch?v=OZIMUYkGzWE&list=PLpmkeV7WlemVzNlzZNR12uxyyqaX1-5Kx"),
+                            site: youtube6),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -103,8 +101,7 @@ class YanMenu extends StatelessWidget {
                               color: Colors.pink,
                             ),
                             yazi: "7.Sınıf",
-                            site:
-                                "https://www.youtube.com/watch?v=0_z7oNpumiQ&list=PLpmkeV7WlemWXkg_x5WkjU_TQHSz36c7_"),
+                            site: youtube7),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
@@ -114,8 +111,7 @@ class YanMenu extends StatelessWidget {
                               color: Colors.pink,
                             ),
                             yazi: "8.Sınıf",
-                            site:
-                                "https://www.youtube.com/watch?v=Wx-r10ClJvM&list=PLpmkeV7WlemVU8eiySs09Vbg8AzQoJ17r"),
+                            site: youtube8),
                       ),
                     ],
                   ),
@@ -123,8 +119,7 @@ class YanMenu extends StatelessWidget {
                   const CustomListTile(
                     ikon: Icon(FontAwesomeIcons.userAlt, color: Colors.pink),
                     yazi: "HAKKIMIZDA",
-                    site:
-                        "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about",
+                    site: hakkimizda,
                   ),
                   ListTile(
                     onTap: () {
@@ -135,10 +130,9 @@ class YanMenu extends StatelessWidget {
                       FontAwesomeIcons.phoneAlt,
                       color: Colors.pink,
                     ),
-                    title: const Text(
+                    title: Text(
                       "İLETİŞİM",
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.headline5,
                     ),
                   ),
                 ],
@@ -146,16 +140,6 @@ class YanMenu extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Padding dividercustom() {
-    return const Padding(
-      padding: EdgeInsets.only(left: 10, right: 10),
-      child: Divider(
-        height: 5,
-        color: Color(0xFF9ec22a),
       ),
     );
   }

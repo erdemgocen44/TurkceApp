@@ -1,7 +1,6 @@
 import 'package:aba_app/core/widget/listTileCustom.dart';
 import 'package:aba_app/core/widget/textcustom.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class YanMenu extends StatelessWidget {
   const YanMenu({Key? key}) : super(key: key);
@@ -32,21 +31,10 @@ class YanMenu extends StatelessWidget {
                     ikon: Icon(
                       Icons.adb_sharp,
                       size: 35,
-                      color: Color(0xFF9ec22a),
+                      color: Colors.pink,
                     ),
-                    yazi: "Ortaokul 5",
-                    renk: Colors.pink,
-                    kalinlik: FontWeight.bold,
-                  ),
-                  dividercustom(),
-                  const CustomListTile(
-                    ikon: Icon(
-                      Icons.face_sharp,
-                      size: 35,
-                      color: Color(0xFF9ec22a),
-                    ),
-                    yazi: "Ortaokul 6",
-                    renk: Colors.pink,
+                    yazi: "Konular",
+                    renk: Colors.black,
                     kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
@@ -54,10 +42,10 @@ class YanMenu extends StatelessWidget {
                     ikon: Icon(
                       Icons.mode_edit_sharp,
                       size: 35,
-                      color: Color(0xFF9ec22a),
+                      color: Colors.pink,
                     ),
-                    yazi: "Ortaokul 7",
-                    renk: Colors.pink,
+                    yazi: "Testler",
+                    renk: Colors.black,
                     kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
@@ -65,21 +53,21 @@ class YanMenu extends StatelessWidget {
                     ikon: Icon(
                       Icons.light_sharp,
                       size: 35,
-                      color: Color(0xFF9ec22a),
+                      color: Colors.pink,
                     ),
-                    yazi: "Ortaokul 8",
-                    renk: Colors.pink,
+                    yazi: "Sınav Soruları",
+                    renk: Colors.black,
                     kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
                   ExpansionTile(
                     leading: const Icon(
                       Icons.phone_android,
-                      color: Colors.blueAccent,
+                      color: Colors.pink,
                     ),
                     title: const defaulttext(
-                      yazi: "VİDEO DERSLER",
-                      size: 20,
+                      yazi: "Video Dersler",
+                      size: 16,
                       kalinlik: FontWeight.bold,
                       renk: Colors.black,
                     ),
@@ -89,7 +77,7 @@ class YanMenu extends StatelessWidget {
                         child: const CustomListTile(
                             ikon: Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.orangeAccent,
+                              color: Colors.pink,
                             ),
                             yazi: "5.Sınıf",
                             site:
@@ -100,7 +88,7 @@ class YanMenu extends StatelessWidget {
                         child: const CustomListTile(
                             ikon: Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.deepPurpleAccent,
+                              color: Colors.pink,
                             ),
                             yazi: "6.Sınıf",
                             site:
@@ -111,7 +99,7 @@ class YanMenu extends StatelessWidget {
                         child: const CustomListTile(
                             ikon: Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.lightBlueAccent,
+                              color: Colors.pink,
                             ),
                             yazi: "7.Sınıf",
                             site:
@@ -122,7 +110,7 @@ class YanMenu extends StatelessWidget {
                         child: const CustomListTile(
                             ikon: Icon(
                               Icons.supervised_user_circle,
-                              color: Colors.blueAccent,
+                              color: Colors.pink,
                             ),
                             yazi: "8.Sınıf",
                             site:
@@ -132,8 +120,7 @@ class YanMenu extends StatelessWidget {
                   ),
                   dividercustom(),
                   const CustomListTile(
-                    ikon:
-                        Icon(Icons.family_restroom, color: Colors.purpleAccent),
+                    ikon: Icon(Icons.family_restroom, color: Colors.pink),
                     yazi: "HAKKIMIZDA",
                     site:
                         "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about",
@@ -145,7 +132,7 @@ class YanMenu extends StatelessWidget {
                     },
                     leading: const Icon(
                       Icons.phone,
-                      color: Colors.brown,
+                      color: Colors.pink,
                     ),
                     title: const Text(
                       "İLETİŞİM",
@@ -166,8 +153,8 @@ class YanMenu extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.only(left: 10, right: 10),
       child: Divider(
-        height: 2,
-        color: Colors.blueGrey,
+        height: 5,
+        color: Color(0xFF9ec22a),
       ),
     );
   }

@@ -31,7 +31,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
         title: const Text(
           "Dersimiz Türkçe",
           style: TextStyle(
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: FontWeight.w900,
           ),
         ),

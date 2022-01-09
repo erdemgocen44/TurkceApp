@@ -30,6 +30,6 @@ class Home extends StatelessWidget {
 }
 
 var rotalar = <String, WidgetBuilder>{
-  "/anasayfa": (BuildContext context) => AnaSayfa(),
+  "/anasayfa": (BuildContext context) => const AnaSayfa(),
   "/contact": (BuildContext context) => ContactPage(),
 };

@@ -1,6 +1,7 @@
 import 'package:aba_app/core/widget/listTileCustom.dart';
 import 'package:aba_app/core/widget/textcustom.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class YanMenu extends StatelessWidget {
   const YanMenu({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class YanMenu extends StatelessWidget {
                 children: [
                   const CustomListTile(
                     ikon: Icon(
-                      Icons.adb_sharp,
+                      FontAwesomeIcons.bookReader,
                       size: 35,
                       color: Colors.pink,
                     ),
@@ -40,7 +41,7 @@ class YanMenu extends StatelessWidget {
                   dividercustom(),
                   const CustomListTile(
                     ikon: Icon(
-                      Icons.mode_edit_sharp,
+                      FontAwesomeIcons.hourglassHalf,
                       size: 35,
                       color: Colors.pink,
                     ),
@@ -51,7 +52,7 @@ class YanMenu extends StatelessWidget {
                   dividercustom(),
                   const CustomListTile(
                     ikon: Icon(
-                      Icons.light_sharp,
+                      FontAwesomeIcons.pencilAlt,
                       size: 35,
                       color: Colors.pink,
                     ),
@@ -62,7 +63,7 @@ class YanMenu extends StatelessWidget {
                   dividercustom(),
                   ExpansionTile(
                     leading: const Icon(
-                      Icons.phone_android,
+                      FontAwesomeIcons.youtube,
                       color: Colors.pink,
                     ),
                     title: const defaulttext(
@@ -120,7 +121,7 @@ class YanMenu extends StatelessWidget {
                   ),
                   dividercustom(),
                   const CustomListTile(
-                    ikon: Icon(Icons.family_restroom, color: Colors.pink),
+                    ikon: Icon(FontAwesomeIcons.userAlt, color: Colors.pink),
                     yazi: "HAKKIMIZDA",
                     site:
                         "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about",
@@ -131,7 +132,7 @@ class YanMenu extends StatelessWidget {
                       Navigator.pushNamed(context, "/contact");
                     },
                     leading: const Icon(
-                      Icons.phone,
+                      FontAwesomeIcons.phoneAlt,
                       color: Colors.pink,
                     ),
                     title: const Text(

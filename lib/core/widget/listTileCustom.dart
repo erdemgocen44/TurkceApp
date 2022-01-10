@@ -7,6 +7,7 @@ class CustomListTile extends StatelessWidget {
   final String? site;
   final Color? renk;
   final FontWeight? kalinlik;
+  final String? rota;
 
   const CustomListTile({
     Key? key,
@@ -15,6 +16,7 @@ class CustomListTile extends StatelessWidget {
     this.site,
     this.renk,
     this.kalinlik,
+    this.rota,
   }) : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class CustomListTile extends StatelessWidget {
       ),
       onTap: () {
         Navigator.pop(context);
+        Navigator.pushNamed(context, rota!);
         _urlAc("${site}");
       },
     );

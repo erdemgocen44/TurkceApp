@@ -14,6 +14,7 @@ class KonularPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(25),
         child: ListView.builder(
+          physics: const ClampingScrollPhysics(),
           itemCount: konular.length,
           itemBuilder: (BuildContext context, int position) {
             return KonularCard(konular: konular[position]);

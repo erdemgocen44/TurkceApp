@@ -38,7 +38,6 @@ class YanMenu extends StatelessWidget {
                     yazi: "Konular",
                     renk: Colors.black,
                     kalinlik: FontWeight.bold,
-                    rota: "/konular",
                   ),
                   dividercustom(),
                   const CustomListTile(

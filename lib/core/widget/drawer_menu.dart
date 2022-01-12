@@ -1,6 +1,7 @@
 import 'package:aba_app/core/common/consts.dart';
-import 'package:aba_app/core/widget/dividerCustom.dart';
-import 'package:aba_app/core/widget/listTileCustom.dart';
+import 'package:aba_app/core/widget/divider_custom.dart';
+import 'package:aba_app/core/widget/listtile_rota.dart';
+import 'package:aba_app/core/widget/listtile_site.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -29,18 +30,16 @@ class YanMenu extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  const CustomListTile(
-                    ikon: Icon(
-                      FontAwesomeIcons.bookReader,
-                      size: 35,
-                      color: Colors.pink,
-                    ),
-                    yazi: "Konular",
-                    renk: Colors.black,
-                    kalinlik: FontWeight.bold,
-                  ),
+                  const ListTileRota(
+                      ikon: Icon(
+                        FontAwesomeIcons.bookReader,
+                        size: 35,
+                        color: Colors.pink,
+                      ),
+                      yazi: "Konular",
+                      rota: "/konular"),
                   dividercustom(),
-                  const CustomListTile(
+                  const ListTileRota(
                     ikon: Icon(
                       FontAwesomeIcons.hourglassHalf,
                       size: 35,
@@ -51,7 +50,7 @@ class YanMenu extends StatelessWidget {
                     kalinlik: FontWeight.bold,
                   ),
                   dividercustom(),
-                  const CustomListTile(
+                  const ListTileRota(
                     ikon: Icon(
                       FontAwesomeIcons.pencilAlt,
                       size: 35,
@@ -74,7 +73,7 @@ class YanMenu extends StatelessWidget {
                     children: [
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: const CustomListTile(
+                        child: const ListTileSite(
                           ikon: Icon(
                             Icons.supervised_user_circle,
                             color: Colors.pink,
@@ -85,7 +84,7 @@ class YanMenu extends StatelessWidget {
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: const CustomListTile(
+                        child: const ListTileSite(
                             ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.pink,
@@ -95,7 +94,7 @@ class YanMenu extends StatelessWidget {
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: const CustomListTile(
+                        child: const ListTileSite(
                             ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.pink,
@@ -105,7 +104,7 @@ class YanMenu extends StatelessWidget {
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 10),
-                        child: const CustomListTile(
+                        child: const ListTileSite(
                             ikon: Icon(
                               Icons.supervised_user_circle,
                               color: Colors.pink,
@@ -116,7 +115,7 @@ class YanMenu extends StatelessWidget {
                     ],
                   ),
                   dividercustom(),
-                  const CustomListTile(
+                  const ListTileSite(
                     ikon: Icon(FontAwesomeIcons.userAlt, color: Colors.pink),
                     yazi: "HAKKIMIZDA",
                     site: hakkimizda,

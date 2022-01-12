@@ -1,4 +1,4 @@
-import 'package:aba_app/core/widget/textcustomm.dart';
+import 'package:aba_app/core/widget/text_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:async';
@@ -26,7 +26,9 @@ class _ContactPageState extends State<ContactPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("İLETİŞİM"),
+        title: const Text(
+          "İletişim",
+        ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

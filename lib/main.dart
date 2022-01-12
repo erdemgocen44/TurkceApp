@@ -1,5 +1,6 @@
 import 'package:aba_app/pages/contact.dart';
 import 'package:aba_app/pages/konular.dart';
+import 'package:aba_app/pages/tests.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/anasayfa.dart';
@@ -31,11 +32,14 @@ class Home extends StatelessWidget {
         primaryColor: const Color(0xFF9ec22a),
         fontFamily: "Comfortaa",
         appBarTheme: AppBarTheme(
+          shadowColor: Colors.grey,
+          elevation: 20,
+          titleSpacing: 10,
           backgroundColor: Colors.pink[600],
           foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(
               fontFamily: "PatrickHand-Regular",
-              fontSize: 22, //bunu headline olarak yapmam lazım!
+              fontSize: 25, //bunu headline olarak yapmam lazım!
               fontWeight: FontWeight.bold),
         ),
       ),
@@ -49,4 +53,5 @@ var rotalar = <String, WidgetBuilder>{
   "/anasayfa": (BuildContext context) => const AnaSayfa(),
   "/contact": (BuildContext context) => ContactPage(),
   "/konular": (BuildContext context) => const KonularPage(),
+  "/tests": (BuildContext context) => const TestPage(),
 };

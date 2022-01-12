@@ -1,11 +1,10 @@
 import 'dart:io';
 
-import 'package:aba_app/pages/yanmenu.dart';
+import 'package:aba_app/core/common/futurecustom.dart';
+import 'package:aba_app/core/widget/yanmenu.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
-
-import '../core/futurecustom.dart';
 
 class AnaSayfa extends StatefulWidget {
   const AnaSayfa({Key? key}) : super(key: key);

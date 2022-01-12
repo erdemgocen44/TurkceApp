@@ -1,4 +1,4 @@
-import 'package:aba_app/core/consts.dart';
+import 'package:aba_app/core/common/consts.dart';
 import 'package:aba_app/core/widget/dividerCustom.dart';
 import 'package:aba_app/core/widget/listTileCustom.dart';
 import 'package:flutter/material.dart';

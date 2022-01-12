@@ -48,6 +48,7 @@ class YanMenu extends StatelessWidget {
                     yazi: "Testler",
                     renk: Colors.black,
                     kalinlik: FontWeight.bold,
+                    rota: "/test",
                   ),
                   dividercustom(),
                   const ListTileRota(
@@ -64,11 +65,15 @@ class YanMenu extends StatelessWidget {
                   ExpansionTile(
                     leading: const Icon(
                       FontAwesomeIcons.youtube,
+                      size: 35,
                       color: Colors.pink,
                     ),
-                    title: Text(
+                    title: const Text(
                       "Video Dersler",
-                      style: Theme.of(context).textTheme.headline5,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     children: [
                       Container(
@@ -116,23 +121,22 @@ class YanMenu extends StatelessWidget {
                   ),
                   dividercustom(),
                   const ListTileSite(
-                    ikon: Icon(FontAwesomeIcons.userAlt, color: Colors.pink),
-                    yazi: "HAKKIMIZDA",
+                    ikon: Icon(
+                      FontAwesomeIcons.userAlt,
+                      color: Colors.pink,
+                      size: 35,
+                    ),
+                    yazi: "Hakkımızda",
                     site: hakkimizda,
                   ),
-                  ListTile(
-                    onTap: () {
-                      Navigator.pop(context);
-                      Navigator.pushNamed(context, "/contact");
-                    },
-                    leading: const Icon(
+                  const ListTileRota(
+                    ikon: Icon(
                       FontAwesomeIcons.phoneAlt,
                       color: Colors.pink,
+                      size: 35,
                     ),
-                    title: Text(
-                      "İLETİŞİM",
-                      style: Theme.of(context).textTheme.headline5,
-                    ),
+                    yazi: "İletişim",
+                    rota: "/contact",
                   ),
                 ],
               ),

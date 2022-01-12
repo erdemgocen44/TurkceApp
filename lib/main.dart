@@ -34,10 +34,17 @@ class Home extends StatelessWidget {
         appBarTheme: AppBarTheme(
           shadowColor: Colors.grey,
           elevation: 20,
-          titleSpacing: 10,
           backgroundColor: Colors.pink[600],
           foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(
+              letterSpacing: 2,
+              shadows: <Shadow>[
+                Shadow(
+                  offset: Offset(3.0, 3.0),
+                  blurRadius: 15.0,
+                  color: Colors.black,
+                ),
+              ],
               fontFamily: "PatrickHand-Regular",
               fontSize: 25, //bunu headline olarak yapmam lazım!
               fontWeight: FontWeight.bold),
@@ -53,5 +60,5 @@ var rotalar = <String, WidgetBuilder>{
   "/anasayfa": (BuildContext context) => const AnaSayfa(),
   "/contact": (BuildContext context) => ContactPage(),
   "/konular": (BuildContext context) => const KonularPage(),
-  "/tests": (BuildContext context) => const TestPage(),
+  "/test": (BuildContext context) => const TestPage(),
 };

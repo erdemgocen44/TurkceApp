@@ -26,7 +26,7 @@ class ListTileRota extends StatelessWidget {
       title: Text(
         yazi!,
         style:
-            TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: renk),
+            TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: renk),
       ),
       onTap: () {
         Navigator.pop(context);

@@ -56,7 +56,7 @@ class YanMenu extends StatelessWidget {
                       size: 35,
                       color: Colors.pink,
                     ),
-                    yazi: "Sınav Soruları",
+                    yazi: "Yazılı Soruları",
                     renk: Colors.black,
                     kalinlik: FontWeight.bold,
                   ),

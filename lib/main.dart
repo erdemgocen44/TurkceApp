@@ -43,7 +43,7 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
       ),
-      home: AnaSayfa(),
+      home: const AnaSayfa(),
       routes: rotalar,
     );
   }

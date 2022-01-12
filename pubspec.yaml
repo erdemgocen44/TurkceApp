@@ -33,6 +33,7 @@ dependencies:
   flutter_slider_drawer: ^2.0.0
   font_awesome_flutter: ^9.2.0
   google_maps_flutter: ^2.1.1
+  http: ^0.13.4
   provider: ^6.0.2
   share: ^2.0.4
   url: ^2.0.0

@@ -32,6 +32,7 @@ class Home extends StatelessWidget {
         primaryColor: const Color(0xFF9ec22a),
         fontFamily: "Comfortaa",
         appBarTheme: AppBarTheme(
+          centerTitle: true,
           shadowColor: Colors.grey,
           elevation: 20,
           backgroundColor: Colors.pink[600],

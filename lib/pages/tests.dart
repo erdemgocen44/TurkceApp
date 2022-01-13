@@ -10,7 +10,6 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   String _htmlData = " ";
-
   Future _istek() async {
     await http
         .get(Uri.parse(

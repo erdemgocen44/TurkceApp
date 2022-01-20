@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:aba_app/core/common/futurecustom.dart';
 import 'package:aba_app/core/widget/drawer_menu.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
 
@@ -24,7 +25,10 @@ class _AnaSayfaState extends State<AnaSayfa> {
           onPressed: () {
             _scaffold.currentState?.openDrawer();
           },
-          icon: const Icon(Icons.menu),
+          icon: NeumorphicIcon(
+            Icons.menu,
+            size: 25,
+          ),
           tooltip: "Yan Menüyü Aç",
         ),
         title: const Text(
@@ -42,7 +46,10 @@ class _AnaSayfaState extends State<AnaSayfa> {
          Android: https://play.google.com/store/apps
          IOS: https://itunes.apple.com/us/app/id213898""");
             },
-            icon: const Icon(FontAwesomeIcons.share),
+            icon: NeumorphicIcon(
+              FontAwesomeIcons.share,
+              size: 25,
+            ),
             tooltip: "Paylaş",
           ),
           IconButton(
@@ -51,8 +58,11 @@ class _AnaSayfaState extends State<AnaSayfa> {
                   ? "https://play.google.com/store/apps"
                   : "IOS: https://itunes.apple.com/us/app/id213898");
             },
-            icon: const Icon(FontAwesomeIcons.star),
-            tooltip: "Paylaş",
+            icon: NeumorphicIcon(
+              FontAwesomeIcons.star,
+              size: 25,
+            ),
+            tooltip: "Değerlendir",
           ),
         ],
       ),

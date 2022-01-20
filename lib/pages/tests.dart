@@ -11,7 +11,7 @@ class TestPage extends StatefulWidget {
 }
 
 class _TestPageState extends State<TestPage> {
-  String _htmlData = " ";
+  String _htmlData = "";
 
   Future _istek() async {
     await http
@@ -31,16 +31,16 @@ class _TestPageState extends State<TestPage> {
         actions: [
           IconButton(
             onPressed: _istek,
-            icon: Icon(Icons.refresh_outlined),
+            icon: const Icon(Icons.refresh_outlined),
           ),
         ],
       ),
       body: Center(
-        child: _htmlData.length > 0
+        child: _htmlData.isNotEmpty
             ? SingleChildScrollView(
                 child: Text(_htmlData),
               )
-            : CircularProgressIndicator(
+            : const CircularProgressIndicator(
                 color: Colors.pink,
               ),
       ),

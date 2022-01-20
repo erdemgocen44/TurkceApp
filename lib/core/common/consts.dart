@@ -9,5 +9,4 @@ const String youtube8 =
 const String hakkimizda =
     "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about";
 
-const String testLink =
-    "https://www.youtube.com/watch?v=Wx-r10ClJvM&list=PLpmkeV7WlemVU8eiySs09Vbg8AzQoJ17r";
+const String testLink = "https://www.antoloji.com/siir/gunun_siiri/klasik/";

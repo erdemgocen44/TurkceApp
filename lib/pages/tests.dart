@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
 
 class TestPage extends StatefulWidget {
@@ -10,8 +11,7 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   String _htmlData = " ";
-  String link =
-      "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjlg7-J26z1AhWrgv0HHeWYAlEQ3e4CegQIBBAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dsm5amZjPUWA&usg=AOvVaw0Ln-oJfOhp_IVe7nF6fj_k";
+  String link = "https://www.youtube.com/watch?v=sm5amZjPUWA";
   Future _istek() async {
     await http
         .get(Uri.parse(link))
@@ -25,11 +25,21 @@ class _TestPageState extends State<TestPage> {
         title: const Text(
           "Testler",
         ),
+        actions: [
+          IconButton(
+            onPressed: _istek,
+            icon: Icon(Icons.refresh_outlined),
+          ),
+        ],
       ),
       body: Center(
-        child: SingleChildScrollView(
-          child: Text(_htmlData),
-        ),
+        child: _htmlData.length > 0
+            ? SingleChildScrollView(
+                child: Text(_htmlData),
+              )
+            : CircularProgressIndicator(
+                color: Colors.pink,
+              ),
       ),
     );
   }

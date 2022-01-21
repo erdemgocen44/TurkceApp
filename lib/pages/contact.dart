@@ -75,7 +75,7 @@ class _ContactPageState extends State<ContactPage> {
                   Padding(
                     padding: EdgeInsets.all(10),
                     child: defaulttext(
-                      yazi: "Atatürk Bulvarı No: 98 Bakanlıklar/ANKARA",
+                      yazi: "Atatürk Bulvarı No: 98 Bakanlıklar / ANKARA",
                       size: 16,
                       kalinlik: FontWeight.bold,
                       hiza: TextAlign.center,

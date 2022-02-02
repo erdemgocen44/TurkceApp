@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-
-List<String> konular6 = [
-  "CÜMLEDE ANLAM",
+List<String> konular8 = [
+  " CÜMLEDE ANLAM",
   "DEYİMLER, ATASÖZLERİ VE ÖZDEYİŞLER",
   "GEÇİŞ VE BAĞLANTI İFADELERİ",
   "METİNDE ANLAM",

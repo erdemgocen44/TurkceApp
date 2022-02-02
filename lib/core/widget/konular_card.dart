@@ -7,7 +7,7 @@ class KonularCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 15, bottom: 15, left: 10, right: 10),
+      padding: const EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
       child: Neumorphic(
         style: NeumorphicStyle(
             shape: NeumorphicShape.concave,

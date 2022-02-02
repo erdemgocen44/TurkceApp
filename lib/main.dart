@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
         appBarTheme: AppBarTheme(
           centerTitle: true,
           shadowColor: Colors.grey,
-          elevation: 20,
+          elevation: 10,
           backgroundColor: Colors.pink[600],
           foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(

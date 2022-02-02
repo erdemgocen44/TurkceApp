@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class KonularCard extends StatelessWidget {
   final String konular;
@@ -6,18 +6,27 @@ class KonularCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(10),
-      color: const Color(0xFF9ec22a),
-      child: Container(
-        height: MediaQuery.of(context).size.height * 0.2,
-        color: Colors.white,
-        margin: const EdgeInsets.fromLTRB(1, 20, 1, 1),
-        child: Center(
-          child: Text(
-            konular,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline6,
+    return Padding(
+      padding: const EdgeInsets.only(top: 15, bottom: 15, left: 10, right: 10),
+      child: Neumorphic(
+        style: NeumorphicStyle(
+            shape: NeumorphicShape.concave,
+            boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
+            depth: 8,
+            lightSource: LightSource.top,
+            color: Colors.white),
+        child: Container(
+          height: MediaQuery.of(context).size.height * 0.2,
+          margin: const EdgeInsets.fromLTRB(1, 20, 1, 1),
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                konular,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.headline6,
+              ),
+            ),
           ),
         ),
       ),

@@ -23,7 +23,14 @@ class Home extends StatelessWidget {
           ),
           headline6: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 18,
+            fontSize: 20,
+            shadows: <Shadow>[
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 15.0,
+                color: Colors.black,
+              ),
+            ],
           ),
           bodyText1: TextStyle(
             fontSize: 14,

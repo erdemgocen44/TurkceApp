@@ -17,7 +17,7 @@ class KonularCard extends StatelessWidget {
             color: Colors.white),
         child: Container(
           height: MediaQuery.of(context).size.height * 0.2,
-          margin: const EdgeInsets.fromLTRB(1, 20, 1, 1),
+          margin: const EdgeInsets.fromLTRB(1, 5, 1, 1),
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),

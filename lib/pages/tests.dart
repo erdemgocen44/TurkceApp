@@ -1,6 +1,5 @@
 import 'package:aba_app/core/common/consts.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
 
 class TestPage extends StatefulWidget {
@@ -14,11 +13,11 @@ class _TestPageState extends State<TestPage> {
   String _htmlData = "";
 
   Future _istek() async {
-    await http
-        .get(Uri.parse(testLink))
-        .then((gelenVeri) => _htmlData = gelenVeri.body);
-    debugPrint(_htmlData);
-    setState(() {});
+    await http.get(Uri.parse(testLink)).then((gelenVeri) {
+      _htmlData = gelenVeri.body;
+      debugPrint(_htmlData);
+      setState(() {});
+    });
   }
 
   @override

@@ -21,7 +21,17 @@ class _TestPageState extends State<TestPage> {
     _htmlData = "";
     setState(() {});
     await http.get(Uri.parse(testLink)).then((gelenVeri) {
-      _htmlData = gelenVeri.body;
+      _htmlData = gelenVeri.body
+          .replaceAll("\n", "")
+          .replaceAll("\t", "")
+          .replaceAll("  ", "");
+
+      // ignore: unnecessary_new
+      RegExp arama = new RegExp(
+          '<div id="description-container" class="style-scope ytd-channel-about-metadata-renderer">(.*?)</yt-formatted-string></div>');
+      Match eslesen = arama.firstMatch(_htmlData) as Match;
+
+      _htmlData = eslesen.group(1)!;
       debugPrint(_htmlData);
       setState(() {});
     });

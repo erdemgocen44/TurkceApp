@@ -11,8 +11,15 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   String _htmlData = "";
+  @override
+  void initState() {
+    super.initState();
+    _istek();
+  }
 
   Future _istek() async {
+    _htmlData = "";
+    setState(() {});
     await http.get(Uri.parse(testLink)).then((gelenVeri) {
       _htmlData = gelenVeri.body;
       debugPrint(_htmlData);

@@ -10,4 +10,4 @@ const String hakkimizda =
     "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about";
 
 const String testLink =
-    "https://www.youtube.com/channel/UCdnRx--y-mEp-wkTO-aRs2g/about";
+    "https://eksisozluk.com/kac-yil-yasamak-isterdiniz--7167089?a=popular";

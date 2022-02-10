@@ -10,15 +10,12 @@ class KonularPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Konular"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(25),
-        child: ListView.builder(
-          physics: const ClampingScrollPhysics(),
-          itemCount: konular.length,
-          itemBuilder: (BuildContext context, int position) {
-            return KonularCard(konular: konular[position]);
-          },
-        ),
+      body: ListView.builder(
+        physics: const ClampingScrollPhysics(),
+        itemCount: konular.length,
+        itemBuilder: (BuildContext context, int position) {
+          return KonularCard(konular: konular[position]);
+        },
       ),
     );
   }

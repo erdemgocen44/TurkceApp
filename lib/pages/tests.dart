@@ -1,5 +1,6 @@
 import 'package:aba_app/core/common/consts.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:http/http.dart' as http;
 
 class TestPage extends StatefulWidget {
@@ -18,21 +19,19 @@ class _TestPageState extends State<TestPage> {
   } */
 
   Future _istek() async {
-    /*    _htmlData = "";
-    setState(() {}); */
+    _htmlData = "";
+    setState(() {});
     await http.get(Uri.parse(testLink)).then((gelenVeri) {
       _htmlData = gelenVeri.body
-          /* .replaceAll("\n", "")
+          .replaceAll("\n", "")
           .replaceAll("\t", "")
           .replaceAll("  ", "");
 
-      // ignore: unnecessary_new
       RegExp arama = new RegExp(
-          '<div id="description-container" class="style-scope ytd-channel-about-metadata-renderer">(.*?)</yt-formatted-string></div>');
+          '<div id="site-column site-column-content">(.*?)<!-- .site-column-wrapper .clearfix --></div>');
       Match eslesen = arama.firstMatch(_htmlData) as Match;
 
-      _htmlData = eslesen.group(1)! */
-          ;
+      _htmlData = eslesen.group(1)!;
       debugPrint(_htmlData);
       setState(() {});
     });
@@ -55,7 +54,10 @@ class _TestPageState extends State<TestPage> {
       body: Center(
         child: _htmlData.isNotEmpty
             ? SingleChildScrollView(
-                child: Text(_htmlData),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Html(data: _htmlData),
+                ),
               )
             : const CircularProgressIndicator(
                 color: Colors.pink,

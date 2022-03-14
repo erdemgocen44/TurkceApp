@@ -1,13 +1,11 @@
-import 'package:aba_app/core/widget/inherite_widget.dart';
 import 'package:aba_app/pages/contact.dart';
-import 'package:aba_app/pages/homepage/core/functions_widget.dart';
 import 'package:aba_app/pages/konular.dart';
 import 'package:aba_app/pages/tests.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/anasayfa.dart';
 
-void main() => runApp(InheriteWidget(islem: IslemDetay, child: Home()));
+void main() => runApp(const Home());
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

@@ -32,7 +32,7 @@ class _TestPageState extends State<TestPage> {
       Match eslesen = arama.firstMatch(_htmlData) as Match;
 
       _htmlData = eslesen.group(1)!;
-      debugPrint(_htmlData);
+
       setState(() {});
     });
   }

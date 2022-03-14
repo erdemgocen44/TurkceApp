@@ -18,6 +18,8 @@ class IslemDetay implements Islemler {
           .replaceAll("\n", "")
           .replaceAll("\t", "")
           .replaceAll("  ", "");
+
+      print(veriler);
     });
     return true;
   }

@@ -54,6 +54,7 @@ class _TestPageState extends State<TestPage> {
       body: Center(
         child: _htmlData.isNotEmpty
             ? SingleChildScrollView(
+                physics: const ClampingScrollPhysics(),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Html(data: _htmlData),
